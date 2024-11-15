@@ -20,12 +20,7 @@ public class Consola extends JFrame {
     private String prompt;
 
     public Consola() {                              //AQUI PONER SU DIRECTORIO INGENIERO ERICK.
-        String directorioInicial = JOptionPane.showInputDialog(
-                this,
-                "Por favor, ingrese el directorio inicial:",
-                "Directorio Inicial",
-                JOptionPane.QUESTION_MESSAGE
-        );
+       
         funcionesArchivos = new Funciones_Archivos("C:\\Users\\royum\\OneDrive\\Documentos\\NetBeansProjects\\Lab5_File_Progra2");
         prompt = funcionesArchivos.getCarpetaActual() + "> ";
 
